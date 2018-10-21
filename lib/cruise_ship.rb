@@ -7,5 +7,11 @@
 # }
 
 def select_winner(passengers)
-  # add the code snippet here!
+  winner = ""
+  passengers.select do |key, value| 
+    if key == "suite_a" and value.include?("A")
+      winner = value
+    end
+  end
+  winner
 end
