@@ -9,7 +9,7 @@
 def select_winner(passengers)
   winner = ""
   passengers.select do |key, value| 
-    if key == "suite_a" and value.start_with?("A")
+    if key == :suite_a and value.start_with?("A")
       winner = value
     end
   end
